@@ -2,8 +2,7 @@ From node:alpine
 
 MAINTAINER Satoru Murakami
 
-RUN apk update \
-  && apk add git  \
+RUN apk --update git \
   && npm install -g express-generator \
   && npm install -g create-react-app \
 
