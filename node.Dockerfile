@@ -8,4 +8,6 @@ RUN apk --update add git \
 
 ADD welcome.js ./
 
-CMD ["node","welcome.js"]
+ADD setup.sh ./
+
+CMD ["sh","setup.sh"]
